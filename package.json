@@ -1,0 +1,28 @@
+{
+  "name": "bsky-weather-bot",
+  "version": "1.0.0",
+  "description": "Daily weather forecasts for German cities as a Bluesky bot",
+  "keywords": [
+    "blusky",
+    "weather",
+    "forecast",
+    "bot"
+  ],
+  "author": {
+    "name": "Batuhan Bilmez",
+    "email": "s.batuhanbilmez@gmail.com"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js --now"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.14.21",
+    "cron": "^4.1.4",
+    "dotenv": "^16.4.7",
+    "winston": "^3.17.0"
+  }
+}

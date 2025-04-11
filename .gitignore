@@ -1,0 +1,4 @@
+forecasts/
+logs/
+node_modules/
+.env
