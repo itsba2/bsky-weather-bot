@@ -5,6 +5,7 @@ module.exports = {
   openWeatherMap: {
     apiKey: process.env.API_KEY,
     baseUrl: "https://api.openweathermap.org/data/3.0/onecall",
+    lang: "de",
     units: "metric",
     exclude: ["current", "minutely", "hourly", "alerts"].join(),
   },

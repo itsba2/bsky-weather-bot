@@ -1,12 +1,12 @@
 const config = require("./config");
 const logger = require("./logger");
 
-const { baseUrl, units, exclude, apiKey } = config.openWeatherMap;
+const { baseUrl, lang, units, exclude, apiKey } = config.openWeatherMap;
 
 async function fetchWeatherForecast({ name, lat, lon }) {
   logger.info(`Fetching weather forecast for ${name}`);
   try {
-    const url = `${baseUrl}?lat=${lat}&lon=${lon}&units=${units}&exclude=${exclude}&appid=${apiKey}`;
+    const url = `${baseUrl}?lat=${lat}&lon=${lon}&lang=${lang}&units=${units}&exclude=${exclude}&appid=${apiKey}`;
     const response = await fetch(url);
     const data = await response.json();
     logger.http(`API Request: ${url.replace(apiKey, "API_KEY")}`);
