@@ -42,10 +42,10 @@ const job = new CronJob(config.cronSchedule, async () => {
 });
 
 if (process.argv.includes("--now")) {
-  logger.info("Running forecast generation immediately (test mode)");
+  logger.info("Running forecast generation immediately");
   generateForecasts()
     .then((forecasts) => {
-      logger.info("Test forecast generation completed successfully");
+      logger.info("Manual forecast generation completed successfully");
       console.log("\nGenerated Forecasts:\n");
       console.log(forecasts);
     })

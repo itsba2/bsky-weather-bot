@@ -9,7 +9,7 @@ const agent = new BskyAgent({
 async function loginToBsky() {
   try {
     await agent.login({
-      identifier: config.bsky.username,
+      identifier: config.bsky.identifier,
       password: config.bsky.password,
     });
     logger.info("Successfully logged in to Bluesky");

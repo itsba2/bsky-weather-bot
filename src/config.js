@@ -10,7 +10,7 @@ module.exports = {
     exclude: ["current", "minutely", "hourly", "alerts"].join(),
   },
   bsky: {
-    username: process.env.BLUESKY_USERNAME,
+    identifier: process.env.BLUESKY_IDENTIFIER,
     password: process.env.BLUESKY_PASSWORD,
     service: "https://bsky.social",
   },
